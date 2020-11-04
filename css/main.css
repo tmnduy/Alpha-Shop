@@ -48,7 +48,19 @@
 /*Create Hover*/
 
 .header__nav-item:hover,
-.header__nav-item--link:hover{
-    cursor: pointer; /* Cursor: Con trỏ chuột, Pointer: Bàn tay*/
-    opacity: 0.7;
+.header__nav-item--link:hover {
+    cursor: pointer;
+    /* Cursor: Con trỏ chuột, Pointer: Bàn tay*/
+    color: rgba(255 , 255, 255, 0.7);
+    /* Không được dùng opacity vì sẽ không thể bỏ hover*/
+}
+
+.header__nav-icon {
+    align-items: center;
+    margin: 0 2px;
+}
+
+.disible {
+    cursor: text;
+    color: var(--white-color);
 }
