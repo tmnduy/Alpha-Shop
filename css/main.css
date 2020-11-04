@@ -16,7 +16,7 @@
 
 .header ul li {
     position: relative;
-   display: inline-block;
+    display: inline-block;
     font-size: 1.5rem;
     text-decoration: none;
     color: var(--white-color);
@@ -25,12 +25,14 @@
 
 .header ul li a {
     text-decoration: none;
+    color: var(--white-color);
 }
 
 .header__nav-item--bold {
     font-weight: 600;
 }
 
+/* Create \ */
 .header__nav-item--separate::after {
     content: "";
     display: block;
@@ -41,4 +43,12 @@
     right: -9px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/*Create Hover*/
+
+.header__nav-item:hover,
+.header__nav-item--link:hover{
+    cursor: pointer; /* Cursor: Con trỏ chuột, Pointer: Bàn tay*/
+    opacity: 0.7;
 }
