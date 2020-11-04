@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Syne+Mono&display=swap');
+
+:root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --text-color: #333333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+}
+.grid{
+    width: 1200px;
+    max-width: 100%; /* Giảm kích thước với màn hình nhỏ hơn 1200 */
+    margin: 0 auto; /* Tự động căn giữa*/
+}
+.grid__full-width{
+    width: 100%; /* Không muốn sd 1200 */
+}
+.grid__row{
+    display: flex; /* Tự động nằm ngang*/
+    flex-wrap: wrap; /* Tự đọng xuống dòng */
+}
