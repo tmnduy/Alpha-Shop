@@ -28,3 +28,11 @@ html {
     display: flex; /* Tự động nằm ngang*/
     flex-wrap: wrap; /* Tự đọng xuống dòng */
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity:   1;
+    }
+}
