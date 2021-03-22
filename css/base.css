@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Syne+Mono&display=swap');
 
 :root {
-    --white-color: #ffffff;
+    --primery-color: #ee4d2d;
     --black-color: #000000;
     --text-color: #333333;
+    --border-color: #dbdbdb
 }
 
 * {
@@ -16,23 +17,87 @@ html {
     font-family: 'Merriweather', serif;
     box-sizing: border-box;
 }
-.grid{
+
+.grid {
     width: 1200px;
-    max-width: 100%; /* Giảm kích thước với màn hình nhỏ hơn 1200 */
-    margin: 0 auto; /* Tự động căn giữa*/
+    max-width: 100%;
+    /* Giảm kích thước với màn hình nhỏ hơn 1200 */
+    margin: 0 auto;
+    /* Tự động căn giữa*/
 }
-.grid__full-width{
-    width: 100%; /* Không muốn sd 1200 */
+
+.grid__full-width {
+    width: 100%;
+    /* Không muốn sd 1200 */
 }
-.grid__row{
-    display: flex; /* Tự động nằm ngang*/
-    flex-wrap: wrap; /* Tự đọng xuống dòng */
+
+.grid__row {
+    display: flex;
+    /* Tự động nằm ngang*/
+    flex-wrap: wrap;
+    /* Tự đọng xuống dòng */
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
-    100%{
-        opacity:   1;
+
+    100% {
+        opacity: 1;
     }
+}
+
+
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__body {
+    background-color: white;
+    margin: auto;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Button */
+
+.btn {
+    min-width: 142px;
+    min-height: 32px;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+    outline: none;
+}
+
+.btn.btn--normal:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--primary {
+    background-color: var(--primery-color);
+    color: white;
+}
+.btn.btn--size-s{
+    height: 30px;
 }
