@@ -5,6 +5,7 @@
     --black-color: #000000;
     --text-color: #333333;
     --border-color: #dbdbdb;
+    --star-rating: #fbfb00e0;
 
     --header-height: 120px;
     --nav-height: 34px;
@@ -54,6 +55,12 @@ html {
     padding-left: 12px;
     padding-right: 12px;
     width: 83.333%;
+}
+
+.grid__col-5 {
+    padding-left: 12px;
+    padding-left: 12px;
+    width: 20%;
 }
 
 @keyframes fadeIn {
@@ -175,6 +182,7 @@ html {
     list-style: none;
     padding: 8px 16px;
     display: none;
+    z-index: 1;
 }
 
 .select-input__item {}
@@ -189,4 +197,84 @@ html {
 
 .select-input__link:hover {
     color: var(--primery-color);
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 12px;
+}
+
+.pagination-item__link {
+    display: block;
+    min-width: 40px;
+    height: 30px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #939393;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+}
+
+.pagination-item__active {
+    background-color: var(--primery-color);
+    color: white;
+}
+
+/* Footer */
+.footer {
+    border-top: 4px solid var(--primery-color);
+    color: var(--text-color);
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.footer-heading {
+    font-size: 1.6rem;
+}
+
+.footer-list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 10px;
+}
+
+.footer-item {
+    margin-left: 0;
+    padding-top: 10px;
+}
+
+.footer-item__link {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.footer-down {
+    display: flex;
+}
+
+.footer-down__qr {
+    width: 80px;
+    border: 1px solid #ccc;
+}
+
+.footer-down__app {
+    /* text-align: center; */
+}
+
+.footer-down__app-ch-play {
+    width: 100px;
+    margin: 10px;
+}
+
+.footer-down__app-app-store {
+    width: 100px;
+    margin: 10px;
+
 }
